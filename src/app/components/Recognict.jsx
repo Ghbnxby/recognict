@@ -1,6 +1,7 @@
 import React from "react";
 import {Image} from "react-bootstrap";
 import SimpleFilter from "../filters/Filter.js";
+import SimpleBinarization from "../filters/SimpleBinarization.js";
 import jQuery from "jquery";
 
 export default class Recognict extends React.Component{
@@ -30,19 +31,19 @@ export default class Recognict extends React.Component{
 
   constructor(props){
     super(props);
-    this.simpleFilter = new SimpleFilter()
+    this.simpleFilter = new SimpleBinarization()
   }
 
   componentDidMount(){
     let img = React.findDOMNode(this.refs["img"]);
     img.onload = () => {
       let canvas = React.findDOMNode(this.refs["canvas"]);
+      canvas.height = img.height;
+      canvas.width = img.width;
       let context = canvas.getContext('2d');
       context.drawImage(img, 0, 0);
-      let imageData = context.getImageData(0, 0, 300, 300);
-      console.log(imageData);
+      let imageData = context.getImageData(0, 0, img.width, img.height);
       let imageDataFiltered = this.simpleFilter.apply(imageData);
-      console.log(imageDataFiltered);
       context.putImageData(imageDataFiltered, 0, 0);
     };
     img.src = "demo/girl.png";
