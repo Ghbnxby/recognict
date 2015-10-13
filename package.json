@@ -1,0 +1,45 @@
+{
+  "name": "reactjs-template",
+  "version": "1.0.0",
+  "description": "Temlate for creation ReactJS application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghbnxby/reactjs-template.git"
+  },
+  "keywords": [
+    "reactjs-template"
+  ],
+  "author": "Michael Pritchin",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Ghbnxby/reactjs-template/issues"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "gulp default"
+  },
+  "dependencies" : {
+    "connect": "^3.4.0",
+    "serve-static": "^1.10.0",
+    "react": "^0.13.3",
+    "gulp": "^3.9.0 ",
+    "gulp-sourcemaps": "^1.5.2",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "browserify": "^11.2.0",
+    "watchify": "^3.4.0",
+    "babelify": "^6.3.0",
+    "http-server": "^0.8.5",
+    "react-bootstrap": "^0.25.2",
+    "redux": "^3.0.2",
+    "redux-thunk": "^0.1.0",
+    "react-redux": "^2.1.2",
+    "react-data-grid": "^0.13.10",
+    "jquery": "^2.1.4"
+  },
+  "homepage": "https://github.com/Ghbnxby/reactjs-template#readme"
+}
