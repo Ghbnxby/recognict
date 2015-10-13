@@ -1,6 +1,6 @@
 # Recognict
 
-It's attrlication for recognition images , based on ReactJS and using ECMA6 notation
+It's application for recognizing objects in an image, based on ReactJS and using ECMA6
 
 * * *
 
@@ -11,7 +11,7 @@ It's attrlication for recognition images , based on ReactJS and using ECMA6 nota
         - www - contain html and demo data files
         
 ## To run: 
-       1)git clone https://github.com/Ghbnxby/reactjs-template
+       1)git clone https://github.com/Ghbnxby/recognict
        2)npm start
        3)open http://localhost:3000
        
