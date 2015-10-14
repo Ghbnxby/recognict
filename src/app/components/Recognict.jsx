@@ -18,8 +18,8 @@ export default class Recognict extends React.Component{
         </div>
         <div className="col-md-2"/>
         <div className="col-md-4">
-          <div className="thumbnail">
-            <canvas ref="canvas"/>
+          <div className="thumbnail" style={{textAlign: "center"}}>
+            <canvas ref="canvas" style={{display: "inline"}}/>
             <div className="caption">
               <h3 className="text-center">Filter image</h3>
             </div>

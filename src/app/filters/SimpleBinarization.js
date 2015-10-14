@@ -7,7 +7,7 @@ export default class SimpleBinarization{
       var r = pixels[i];
       var g = pixels[i + 1];
       var b = pixels[i + 2];
-      if(0.3 > 0.299 * r+ 0.587 * g+ 0.114 * b) color = 0;
+      if(127 > 0.299 * r+ 0.587 * g+ 0.114 * b) color = 0;
       else color = 255;
       pixels[i]     = color; // red
       pixels[i + 1] = color; // green
