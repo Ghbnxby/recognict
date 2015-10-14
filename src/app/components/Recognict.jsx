@@ -1,7 +1,7 @@
 import React from "react";
 import {Image} from "react-bootstrap";
 import SimpleFilter from "../filters/Filter.js";
-import SimpleBinarization from "../filters/SimpleBinarization.js";
+import SimpleBinarization from "../filters/OtsuBinarization.js";
 import jQuery from "jquery";
 
 export default class Recognict extends React.Component{
